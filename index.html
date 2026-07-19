@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lawal Opemipo — Data Scientist · Backend Developer · Quantum Computing Researcher</title>
+<meta name="description" content="Portfolio of Lawal Opemipo — Computer Science undergraduate, Data Scientist, Backend Developer, and Quantum Computing Researcher building intelligent systems at the intersection of AI and quantum machine learning.">
+<meta name="theme-color" content="#06070f">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Lawal Opemipo — Portfolio">
+<meta property="og:description" content="Data Scientist · Backend Developer · Quantum Computing Researcher">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- BACKGROUND FIELD -->
+<div class="bg-field" aria-hidden="true">
+  <canvas id="qc-canvas"></canvas>
+  <div class="bg-vignette"></div>
+  <div class="bg-grid"></div>
+</div>
+
+<!--  NAV  -->
+<header class="nav" id="nav">
+  <a href="#top" class="nav__brand">
+    <span class="nav__brand-mark">LO</span><span class="nav__brand-dot">·</span><span class="nav__brand-sub">qbit</span>
+  </a>
+  <nav class="nav__links" id="navLinks">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#research">Research</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#fellowships">Fellowships</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="nav__actions">
+    <a class="btn btn--ghost btn--sm" href="assets/Lawal_Opemipo_CV.pdf" download>Download CV</a>
+    <button class="nav__burger" id="navBurger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!--  HERO  -->
+<section class="hero" id="top">
+  <div class="hero__inner">
+    <p class="eyebrow reveal"><span class="eyebrow__glyph">›</span> init --portfolio&nbsp;<span class="cursor-blip"></span></p>
+    <h1 class="hero__name reveal">Lawal Opemipo</h1>
+    <p class="hero__role reveal">
+      <span id="typedRole">Computer Science Graduate</span><span class="type-caret">|</span>
+    </p>
+    <p class="hero__intro reveal">
+      I build intelligent systems that combine Artificial Intelligence, Data Science, Backend Engineering, and Quantum Computing to solve real-world problems. My passion lies in creating scalable applications, conducting impactful research, and exploring the future of quantum-enhanced machine learning.
+    </p>
+    <div class="hero__actions reveal">
+      <a href="assets/Lawal_Opemipo_CV.pdf" download class="btn btn--primary">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 19h16"/></svg>
+        Download CV
+      </a>
+      <a href="#contact" class="btn btn--outline">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" opacity="0"/><path d="M3 6l9 6 9-6M4 5h16v14H4z"/></svg>
+        Get in Touch
+      </a>
+    </div>
+
+    <div class="hero__stack reveal" aria-label="Core stack">
+      <span>Python</span><span>Django</span><span>Scikit-learn</span><span>Qiskit</span><span>MySQL</span><span>Quantum ML</span>
+    </div>
+  </div>
+
+  <div class="hero__float-icons" aria-hidden="true">
+    <span class="ficon fi-1">λ</span>
+    <span class="ficon fi-2">{ }</span>
+    <span class="ficon fi-3">|ψ⟩</span>
+    <span class="ficon fi-4">∑</span>
+    <span class="ficon fi-5">⚛</span>
+    <span class="ficon fi-6">01</span>
+  </div>
+
+  <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+    <span>scroll</span>
+    <div class="scroll-cue__line"><i></i></div>
+  </a>
+</section>
+
+<main>
+
+<!--  ABOUT -->
+<section class="section" id="about">
+  <div class="section__head reveal">
+    <p class="eyebrow">$ whoami --verbose</p>
+    <h2>About</h2>
+  </div>
+
+  <div class="about__grid">
+    <div class="about__copy reveal">
+      <p> I am a recent Computer Science graduate of LAUTECH with a growing specialisation in data science and applied machine learning. Over the past few years, I've moved between three worlds that most people keep separate — <strong>backend engineering</strong>, <strong>data science</strong>, and <strong>quantum computing</strong> — because I think the most interesting problems live at the seams between them.</p>
+      <p>Day to day, that means designing REST APIs and relational schemas that hold up in production, and training models that turn raw patient or business data into decisions someone can act on. Alongside that, I've been developing a research track in <strong>quantum machine learning</strong>, currently focused on hybrid quantum-classical autoencoders for anomaly detection — work that's taken me through fellowships and conferences across the African quantum computing community.</p>
+      <p>I care about building things that are both technically rigorous and genuinely usable: systems clean enough to hand to a non-technical user, and research precise enough to defend in front of a technical one. I'm currently preparing for graduate research and international conference presentations in AI and quantum computing.</p>
+    </div>
+
+    <div class="about__stats" id="statsGrid"></div>
+  </div>
+</section>
+
+<!--  SKILLS  -->
+<section class="section section--alt" id="skills">
+  <div class="section__head reveal">
+    <p class="eyebrow">$ skills --list --by-category</p>
+    <h2>Skills &amp; Tools</h2>
+    <p class="section__sub">A working stack spanning application backends, data pipelines, and quantum circuits.</p>
+  </div>
+
+  <div class="skills__grid" id="skillsGrid"></div>
+</section>
+
+<!--  FEATURED RESEARCH  -->
+<section class="section" id="research">
+  <div class="section__head reveal">
+    <p class="eyebrow">|ψ⟩ research.featured()</p>
+    <h2>Featured Research</h2>
+  </div>
+
+  <div class="research__card reveal">
+    <div class="research__poster" id="posterOpen" role="button" tabindex="0" aria-label="Open research poster">
+      <img src="assets/poster-preview.jpg" alt="Research poster: Detecting Anomalies with Quantum Autoencoders" loading="lazy">
+      <div class="research__poster-overlay">
+        <span>View full poster</span>
+      </div>
+    </div>
+    <div class="research__copy">
+      <span class="tag tag--accent">In progress · Proposal stage</span>
+      <h3>Detecting Anomalies with Quantum Autoencoders</h3>
+      <p class="research__subtitle">A hybrid quantum–classical approach to efficient pattern recognition</p>
+      <p>This research designs and evaluates a hybrid quantum-classical autoencoder framework for anomaly detection in high-dimensional data, benchmarked directly against a matched classical autoencoder. A parameterised quantum circuit compresses input qubits into a latent subspace; the fidelity of discarded "trash" qubits against a reference state — measured via a SWAP test — defines the reconstruction and anomaly score.</p>
+
+      <button class="link-expand" id="abstractToggle" aria-expanded="false" aria-controls="abstractPanel">
+        Read research questions &amp; methodology
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+
+      <div class="abstract-panel" id="abstractPanel" hidden>
+        <div class="abstract-panel__col">
+          <h4>Research questions</h4>
+          <ul>
+            <li>Can a quantum autoencoder learn a compact latent representation of normal data using fewer trainable parameters than a classical autoencoder?</li>
+            <li>Does the quantum latent space separate anomalies more sharply — via reconstruction fidelity — than classical reconstruction error?</li>
+            <li>How does hybrid quantum-classical training converge relative to purely classical training, particularly with limited data?</li>
+          </ul>
+        </div>
+        <div class="abstract-panel__col">
+          <h4>Methodology</h4>
+          <ul>
+            <li>Synthetic Gaussian-cluster datasets with injected anomalies, amplitude-encoded into qubit states.</li>
+            <li>A parameterised quantum circuit (PQC) compresses <em>n</em> qubits into <em>k</em> latent qubits, trained via SWAP-test fidelity.</li>
+            <li>A classical optimiser (COBYLA / Adam) updates circuit parameters from fidelity measured on a quantum simulator.</li>
+            <li>Benchmarked against a classical autoencoder with matched latent dimensionality.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="research__tags">
+        <span class="tag">Quantum Machine Learning</span>
+        <span class="tag">Hybrid Quantum-Classical Computing</span>
+        <span class="tag">Quantum Autoencoders</span>
+        <span class="tag">Anomaly Detection</span>
+        <span class="tag">Cybersecurity</span>
+        <span class="tag">Industrial Monitoring</span>
+      </div>
+
+      <div class="research__meta">
+        <span>Ladoke Akintola University of Technology (LAUTECH)</span>
+        <span aria-hidden="true">·</span>
+        <span>African Quantum Consortium</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section class="section section--alt" id="projects">
+  <div class="section__head reveal">
+    <p class="eyebrow">$ ls ./projects</p>
+    <h2>Projects</h2>
+    <p class="section__sub">Applied systems — from healthcare ML to backend platforms for financial cooperatives.</p>
+  </div>
+
+  <div class="projects__grid" id="projectsGrid"></div>
+</section>
+
+<!-- ================= RESEARCH INTERESTS ================= -->
+<section class="section" id="interests">
+  <div class="section__head reveal">
+    <p class="eyebrow">|ψ⟩ interests.map()</p>
+    <h2>Research Interests</h2>
+  </div>
+
+  <div class="interests__grid" id="interestsGrid"></div>
+</section>
+
+<!-- ================= EXPERIENCE TIMELINE ================= -->
+<section class="section section--alt" id="experience">
+  <div class="section__head reveal">
+    <p class="eyebrow">$ git log --oneline</p>
+    <h2>Experience</h2>
+  </div>
+
+  <div class="timeline" id="timeline"></div>
+</section>
+
+<!-- ================= FELLOWSHIPS ================= -->
+<section class="section" id="fellowships">
+  <div class="section__head reveal">
+    <p class="eyebrow">$ fellowships --active</p>
+    <h2>Fellowships &amp; Professional Development</h2>
+  </div>
+
+  <div id="fellowshipsGrid"></div>
+</section>
+
+<!-- ================= CERTIFICATIONS ================= -->
+<section class="section section--alt" id="certifications">
+  <div class="section__head reveal">
+    <p class="eyebrow">$ certifications --verify</p>
+    <h2>Certifications &amp; Conferences</h2>
+  </div>
+
+  <div id="certsGrid"></div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="section contact" id="contact">
+  <div class="section__head reveal">
+    <p class="eyebrow">$ contact --open-channel</p>
+    <h2>Let's build something</h2>
+    <p class="section__sub">Open to research collaborations, backend engineering roles, and conversations about quantum machine learning.</p>
+  </div>
+
+  <div class="contact__grid reveal">
+    <a class="contact__card" href="mailto:lawalopemipo45@gmail.com">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18v12H3z"/><path d="M3 7l9 6 9-6"/></svg>
+      <span class="contact__label">Email</span>
+      <span class="contact__value">lawalopemipo45@gmail.com</span>
+    </a>
+    <a class="contact__card" href="https://github.com/Opemipo-001" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.17c0 4.47 2.87 8.26 6.85 9.6.5.1.68-.22.68-.49 0-.24-.01-1.04-.01-1.88-2.79.62-3.38-1.21-3.38-1.21-.46-1.19-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.57 2.34 1.11 2.91.85.09-.67.35-1.11.64-1.37-2.23-.26-4.57-1.15-4.57-5.11 0-1.13.39-2.05 1.03-2.77-.1-.26-.45-1.32.1-2.75 0 0 .84-.27 2.75 1.06a9.36 9.36 0 0 1 5 0c1.91-1.33 2.75-1.06 2.75-1.06.55 1.43.2 2.49.1 2.75.64.72 1.03 1.64 1.03 2.77 0 3.97-2.34 4.85-4.58 5.11.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.17C22 6.58 17.52 2 12 2z"/></svg>
+      <span class="contact__label">GitHub</span>
+      <span class="contact__value">github.com/Opemipo-001</span>
+    </a>
+    <a class="contact__card" href="https://linkedin.com/in/opemipo-lawal-95776123a" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M6.94 5a2 2 0 1 1-4-.02 2 2 0 0 1 4 .02zM7 8.48H3V21h4V8.48zM13.5 8.48H9.72V21h3.79v-6.4c0-1.7.32-3.34 2.42-3.34 2.07 0 2.1 1.94 2.1 3.45V21H22v-7.98c0-3.6-.78-6.37-4.98-6.37-1.99 0-3.32 1.09-3.87 2.13h-.05V8.48H13.5z"/></svg>
+      <span class="contact__label">LinkedIn</span>
+      <span class="contact__value">opemipo-lawal</span>
+    </a>
+    <a class="contact__card" href=https://x.com/Oluwafe37179237 target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M18.9 2H22l-7.5 8.57L23 22h-6.9l-5.4-7.06L4.4 22H1.3l8.02-9.17L1 2h7.06l4.88 6.46L18.9 2zm-1.21 18h1.9L7.4 3.9H5.36L17.69 20z"/></svg>
+      <span class="contact__label">X (Twitter)</span>
+      <span class="contact__value">x.com/Oluwafe37179237</span>
+    </a>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <p class="footer__line">Building the future with Artificial Intelligence, Data Science, and Quantum Computing.</p>
+  <div class="footer__bottom">
+    <span>© <span id="year"></span> Lawal Opemipo</span>
+    <span class="footer__dot">·</span>
+    <span class="footer__mono">|0⟩ + |1⟩, still collapsing into new things</span>
+  </div>
+</footer>
+
+<!-- ================= MODAL ================= -->
+<div class="modal" id="lightbox" aria-hidden="true">
+  <div class="modal__backdrop" id="lightboxBackdrop"></div>
+  <div class="modal__panel">
+    <button class="modal__close" id="lightboxClose" aria-label="Close">&times;</button>
+    <img id="lightboxImg" src="" alt="">
+    <a id="lightboxDownload" class="btn btn--outline btn--sm" download>Download</a>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
