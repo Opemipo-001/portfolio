@@ -127,11 +127,10 @@ const RESEARCH_INTERESTS = [
 
 const TIMELINE = [
   {
-    date: "2022 — Present",
-    title: "Computer Science Undergraduate",
-    org: "Ladoke Akintola University of Technology (LAUTECH)",
-    description:
-      "Final-year undergraduate coursework spanning algorithms, databases, and software engineering, alongside independent specialisation in data science and quantum computing.",
+    date: "2022 — 2026",
+title: "Computer Science Graduate",
+org: "Ladoke Akintola University of Technology (LAUTECH)",
+description: "Coursework spanning algorithms, databases, and software engineering, alongside independent specialisation in data science and quantum computing.",
   },
   {
     date: "2024 — Present",
